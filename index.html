@@ -2,184 +2,185 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AppMyDream - Projetos de Apps</title>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M14.6 4.7c-1.3-1.3-3.4-1.3-4.7 0L8 6.6l-1.9-1.9c-1.3-1.3-3.4-1.3-4.7 0S-0.6 8.1 0.7 9.4L8 15l7.3-5.6c1.3-1.3 1.3-3.4 0-4.7z' fill='%236a1b9a'/%3E%3Cpath d='M8 10l-1.6 1.2c-0.2 0.2-0.5 0.2-0.7 0l-1.6-1.2C3.8 9.3 3 8.3 3 7.3c0-0.5 0.2-1 0.6-1.4s0.8-0.6 1.4-0.6c0.5 0 1 0.2 1.4 0.6l0.6 0.6 0.6-0.6c0.4-0.4 0.9-0.6 1.4-0.6s1 0.2 1.4 0.6c0.4 0.4 0.6 0.9 0.6 1.4c0 1-0.8 2-1.6 2.7z' fill='%23ffffff'/%3E%3C/svg%3E" type="image/svg+xml">
-  <style>
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background: #f9f9f9;
-        color: #333;
-    }
-    header {
-        background: #4a148c; /* Roxo escuro */
-        color: white;
-        padding: 2.5rem 1.5rem;
-        text-align: center;
-    }
-    header h1 {
-        font-size: 2.5rem;
-        margin: 0;
-        letter-spacing: 2px;
-    }
-    header p {
-        margin: 0.5rem 0 0;
-        font-size: 1.1rem;
-        opacity: 0.9;
-    }
-    section {
-        padding: 2rem;
-        max-width: 960px;
-        margin: auto;
-    }
-    h2 {
-        color: #4a148c;
-        margin-top: 0;
-        border-bottom: 2px solid #ccc;
-        padding-bottom: 0.5rem;
-        margin-bottom: 2rem;
-    }
-    .app-card-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 2rem;
-    }
-    .app-card {
-        background: white;
-        border-radius: 8px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        padding: 1.5rem;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        position: relative;
-    }
-    .app-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-    }
-    .app-card h3 {
-        color: #6a1b9a; /* Roxo médio */
-        font-size: 1.5rem;
-        margin-top: 0;
-    }
-    .app-card p {
-        font-size: 1rem;
-        line-height: 1.6;
-        color: #555;
-    }
-    .app-links a {
-        display: inline-block;
-        background: #9575cd; /* Roxo claro */
-        color: white;
-        padding: 0.6rem 1.2rem;
-        text-decoration: none;
-        border-radius: 5px;
-        font-size: 0.9rem;
-        margin-right: 1rem;
-        margin-top: 1rem;
-        transition: background 0.3s;
-    }
-    .app-links a:hover {
-        background: #7e57c2;
-    }
-    .app-tag {
-        position: absolute;
-        top: 1.5rem;
-        right: 1.5rem;
-        background: #4a148c;
-        color: white;
-        padding: 0.4rem 0.8rem;
-        border-radius: 20px;
-        font-size: 0.8rem;
-        font-weight: bold;
-    }
-    footer {
-        text-align: center;
-        background: #ececec;
-        padding: 1.5rem;
-        font-size: 0.9rem;
-        color: #666;
-        margin-top: 2rem;
-    }
-  </style>
+  <title>AppMyDream | Desenvolvimento de Aplicações</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header>
-    <h1>AppMyDream</h1>
-    <p>Criando aplicativos para transformar ideias em realidade.</p>
-  </header>
-  <section>
-    <h2>Nossos Projetos</h2>
-    <div class="app-card-container">
 
-      <div class="app-card">
-        <span class="app-tag">web</span>
-        <h3>iConsulta</h3>
-        <p>Um sistema de gestão web para psicólogos e terapeutas. Facilita o controle financeiro, o gerenciamento de pacientes e a organização da agenda de sessões em um único lugar, garantindo mais tempo para o que realmente importa: seus clientes.</p>
-        <div class="app-links">
-          <a href="iconsulta.html" target="_blank" rel="noopener noreferrer">Conheça o Projeto</a>
-        </div>
+<body class="bg-zinc-950 text-zinc-100 antialiased overflow-x-hidden">
+
+<!-- HEADER -->
+<div id="header"></div>
+
+<!-- HERO -->
+<section class="relative bg-gradient-to-b from-zinc-950 via-slate-900 to-zinc-950">
+  <!-- Glow -->
+  <div class="absolute inset-0 flex justify-center">
+    <div class="w-[600px] h-[600px] bg-indigo-600/20 rounded-full blur-3xl"></div>
+  </div>
+
+  <div class="relative max-w-7xl mx-auto px-6 py-36 text-center">
+    <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-8">
+      Desenvolvemos aplicações<br>
+      <span class="bg-gradient-to-r from-indigo-400 to-violet-400 bg-clip-text text-transparent">
+        que tiram ideias do papel
+      </span>
+    </h1>
+
+    <p class="text-zinc-400 max-w-2xl mx-auto text-lg mb-14">
+      MVPs, sistemas web e automações criadas sob medida para quem
+      precisa transformar ideias em produtos reais.
+    </p>
+
+    <div class="flex justify-center gap-4 flex-wrap">
+      <a href="#projetos"
+         class="bg-indigo-600 hover:bg-indigo-500 transition px-7 py-4 rounded-xl font-semibold">
+        Ver projetos
+      </a>
+
+      <a href="/contato.html"
+         class="bg-zinc-800/60 hover:bg-zinc-800 transition px-7 py-4 rounded-xl font-semibold text-zinc-200 border border-zinc-700">
+        Falar com especialista
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- DIVISOR -->
+<div class="h-24 bg-gradient-to-b from-zinc-950 to-zinc-900"></div>
+
+<!-- QUEM SOMOS / PROMESSA -->
+<section class="bg-zinc-900">
+  <div class="max-w-5xl mx-auto px-6 py-24 text-center">
+    <h2 class="text-3xl font-bold mb-6">
+      Seu parceiro técnico do zero até a produção
+    </h2>
+
+    <p class="text-zinc-400 text-lg">
+      Não somos uma fábrica de sites. Atuamos como parceiros técnicos,
+      ajudando a estruturar, desenvolver e evoluir aplicações digitais
+      com foco em resultado.
+    </p>
+  </div>
+</section>
+
+<!-- PROBLEMA → SOLUÇÃO -->
+<section class="bg-gradient-to-b from-zinc-900 to-slate-900">
+  <div class="max-w-7xl mx-auto px-6 py-28 grid md:grid-cols-2 gap-16 items-center">
+
+    <div>
+      <h3 class="text-3xl font-bold mb-6">
+        A parte técnica não pode ser um obstáculo
+      </h3>
+      <p class="text-zinc-400 text-lg">
+        Muitas ideias morrem por falta de alguém que saiba transformar
+        visão em código. Nosso papel é assumir essa responsabilidade.
+      </p>
+    </div>
+
+    <div class="bg-zinc-800/60 border border-zinc-700 rounded-2xl p-8">
+      <ul class="space-y-4 text-zinc-300">
+        <li>✔ Arquitetura bem definida</li>
+        <li>✔ Código limpo e escalável</li>
+        <li>✔ Comunicação clara e sem jargões</li>
+        <li>✔ Foco em entrega real</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- SERVIÇOS -->
+<section class="bg-zinc-950">
+  <div class="max-w-7xl mx-auto px-6 py-28">
+    <h2 class="text-3xl font-bold text-center mb-16">
+      Como podemos ajudar
+    </h2>
+
+    <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+      <div class="bg-gradient-to-br from-zinc-800/60 to-zinc-900 border border-zinc-700 p-8 rounded-2xl">
+        <h3 class="font-semibold text-lg mb-3">Aplicações Web</h3>
+        <p class="text-zinc-400 text-sm">
+          Sistemas, plataformas e APIs sob medida.
+        </p>
       </div>
 
-      <div class="app-card">
-        <span class="app-tag">app</span>
-        <h3>Meu Ponto App</h3>
-        <p>Um aplicativo de registro de ponto digital que usa a câmera do celular para escanear e validar comprovantes de ponto, com armazenamento seguro em nuvem. Ideal para profissionais autônomos e pequenas equipes.</p>
-        <div class="app-links">
-          <a href="#" target="_blank" rel="noopener noreferrer">Ver na Play Store</a>
-          <a href="politica.html" target="_blank" rel="noopener noreferrer">Política de Privacidade</a>
-          <a href="https://expo.dev/accounts/edufeq03/projects/ponto-app/builds/ab1759bf-ba8d-493b-a526-9a9da78d6cb8" target="_blank" rel="noopener noreferrer">Baixar arquivo .apk</a>
-          <a href="exclusaocontameuponto.html" target="_blank" rel="noopener noreferrer">Política de Exclusão de Dados</a>
-        </div>
-      </div>
-      
-      <div class="app-card">
-        <span class="app-tag">web+app</span>
-        <h3>App Emprestei</h3>
-        <p>Solução intuitiva para gerenciar empréstimos e transferências de itens entre filiais de uma mesma empresa. Perfeito para redes de lojas, franquias, escolas, bibliotecas e qualquer organização que precise rastrear ativos de forma simples e eficiente.</p>
-        <div class="app-links">
-          <a href="http://84.46.251.205:5005/" target="_blank" rel="noopener noreferrer">Conheça o App</a>
-        </div>
+      <div class="bg-gradient-to-br from-zinc-800/60 to-zinc-900 border border-zinc-700 p-8 rounded-2xl">
+        <h3 class="font-semibold text-lg mb-3">MVPs</h3>
+        <p class="text-zinc-400 text-sm">
+          Valide sua ideia com rapidez e segurança.
+        </p>
       </div>
 
-      <div class="app-card">
-        <span class="app-tag">web</span>
-        <h3>E23Data</h3>
-        <p>Uma plataforma para simplificar o acesso e o cálculo de propriedades físico-químicas, como densidade e viscosidade. Com uma abordagem "API-first", o E23Data visa democratizar o acesso a dados científicos de alta qualidade em tempo real, ideal para estudantes, pesquisadores e profissionais das áreas de química e engenharia.</p>
-        <div class="app-links">
-          <a href="https://e23data.pyserverbrasil.com.br/" target="_blank" rel="noopener noreferrer">Acessar a Plataforma</a>
-        </div>
-      </div>
-      
-      <div class="app-card">
-        <span class="app-tag">web</span>
-        <h3>Encurtador de Links</h3>
-        <p>Crie links curtos e personalizados para seus projetos, campanhas de marketing ou redes sociais. Uma ferramenta simples e eficiente para gerenciar e rastrear seus URLs.</p>
-        <div class="app-links">
-          <a href="https://encurtador.pyserverbrasil.com.br/" target="_blank" rel="noopener noreferrer">Acessar a Ferramenta</a>
-        </div>
+      <div class="bg-gradient-to-br from-zinc-800/60 to-zinc-900 border border-zinc-700 p-8 rounded-2xl">
+        <h3 class="font-semibold text-lg mb-3">Automação & IA</h3>
+        <p class="text-zinc-400 text-sm">
+          Processos inteligentes e eficientes.
+        </p>
       </div>
 
-      <div class="app-card">
-        <span class="app-tag">web+app</span>
-        <h3>Autoriza-me</h3>
-        <p>Com o Autorizame, a gestão de acesso de prestadores de serviço, delivery e visitantes alcança um novo nível de sofisticação. Nossa tecnologia oferece uma solução completa para síndicos e administradores, garantindo controle total, rastreabilidade e tranquilidade para os moradores.</p>
-        <div class="app-links">
-          <a href="https://autorizame.com.br" target="_blank" rel="noopener noreferrer">Acessar Site</a>
-        </div>
-      </div>
-
-      <div class="app-card">
-        <h3>Seu Próximo Projeto</h3>
-        <p>Tem uma ideia de aplicativo? Nós podemos ajudá-la a se tornar realidade. Da concepção ao lançamento, transformamos seu sonho em um aplicativo funcional e moderno.</p>
-        <div class="app-links">
-          <a href="https://wa.me/+5519996737713?text=Ola!%20gostaria%20de%20conversar%20sobre%20cria%C3%A7%C3%A3o%20de%20aplicativos">Entre em Contato</a>
-        </div>
+      <div class="bg-gradient-to-br from-zinc-800/60 to-zinc-900 border border-zinc-700 p-8 rounded-2xl">
+        <h3 class="font-semibold text-lg mb-3">Consultoria Técnica</h3>
+        <p class="text-zinc-400 text-sm">
+          Direção técnica para projetos em andamento.
+        </p>
       </div>
     </div>
-  </section>
-  <footer>
-    &copy; 2025 AppMyDream. Todos os direitos reservados.
-  </footer>
+  </div>
+</section>
+
+<!-- PROJETOS -->
+<section id="projetos" class="bg-gradient-to-b from-zinc-950 to-zinc-900">
+  <div class="max-w-7xl mx-auto px-6 py-28">
+    <h2 class="text-3xl font-bold text-center mb-16">
+      Projetos reais
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-10">
+      <div class="bg-zinc-800/60 border border-zinc-700 rounded-2xl p-8">
+        <h3 class="font-semibold mb-2">E23Data</h3>
+        <p class="text-zinc-400 text-sm">
+          API técnica para engenharia de processos.
+        </p>
+      </div>
+
+      <div class="bg-zinc-800/60 border border-zinc-700 rounded-2xl p-8">
+        <h3 class="font-semibold mb-2">TrampoFácil</h3>
+        <p class="text-zinc-400 text-sm">
+          Bot de vagas via WhatsApp.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="bg-gradient-to-r from-indigo-600 to-violet-600">
+  <div class="max-w-4xl mx-auto px-6 py-28 text-center">
+    <h2 class="text-4xl font-bold mb-6">
+      Vamos conversar sobre sua ideia?
+    </h2>
+
+    <p class="text-lg opacity-90 mb-12">
+      Se você precisa de um parceiro técnico confiável,
+      a AppMyDream pode ajudar.
+    </p>
+
+    <a href="/contato.html"
+       class="bg-white text-zinc-900 px-8 py-4 rounded-xl font-bold hover:bg-zinc-100 transition">
+      Entrar em contato
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<div id="footer"></div>
+
+<script>
+  fetch('/partials/header.html').then(r => r.text()).then(h => header.innerHTML = h)
+  fetch('/partials/footer.html').then(r => r.text()).then(f => footer.innerHTML = f)
+</script>
+
 </body>
 </html>
